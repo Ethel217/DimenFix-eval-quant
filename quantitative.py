@@ -28,19 +28,30 @@ from sklearn.neighbors import NearestNeighbors
 # high_d_data = data.iloc[:, 1:].values
 
 # load cells
-file_path = ".\\Datasets\\Cells\\output\\testrandom.bin"
+# file_path = ".\\Datasets\\Cells\\output\\subclassGMCS_rescale_random.bin"
+# emb_data = np.fromfile(file_path, dtype=np.float32)
+# emb_data = emb_data.reshape(-1, 2)
+
+# data_file = ".\\Datasets\\Cells\\input\\smFISH_clean_ori.bin"
+# # data = pd.read_csv(data_file)
+# # labels = data.iloc[:, 0].values
+# high_d_data = np.fromfile(data_file, dtype=np.float32)
+# high_d_data = high_d_data.reshape(-1, 627)
+
+# load brain
+file_path = ".\\Datasets\\brain\\output\\base.bin"
 emb_data = np.fromfile(file_path, dtype=np.float32)
 emb_data = emb_data.reshape(-1, 2)
 
-data_file = ".\\Datasets\\Cells\\input\\smFISH_clean_ori.bin"
+data_file = ".\\Datasets\\brain\\input\\filtered.bin"
 # data = pd.read_csv(data_file)
 # labels = data.iloc[:, 0].values
 high_d_data = np.fromfile(data_file, dtype=np.float32)
-high_d_data = high_d_data.reshape(-1, 627)
+high_d_data = high_d_data.reshape(-1, 541)
 
-from sklearn.manifold import trustworthiness
+# from sklearn.manifold import trustworthiness
 
-print(f"trustworthiness: {trustworthiness(high_d_data, emb_data, n_neighbors=5):.4f}")
+# print(f"trustworthiness: {trustworthiness(high_d_data, emb_data, n_neighbors=10):.4f}")
 
 from scipy.spatial import distance_matrix
 from scipy.stats import spearmanr

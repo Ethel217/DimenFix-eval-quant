@@ -41,6 +41,6 @@ Implemented in quantitative.py
 |**Image Segmentation**|fix class, rescale, avg order, switched from fix row | 100 switching + 300 regular|row_class_avg_rescale_100_300.bin| 0.9944| 0.7031| 0.0972| 0.7564| 0.5492|
 |**Cell Type**|disable| remove * dimensions|base.bin|0.9951| 0.5440|-|0.8880|0.7460|
 |**Cell Type**|fix imputedY| remove * dimensions| imputedY.bin| 0.9300| 0.3060|-| 0.5983| 0.5338|
-|**Cell Type**|fix subclass(GMCS), random order, rescale| | subclassGMCS_rescale_random.bin|0.9894|0.4978|TODO | 0.8575| 0.6783|
-|**Cell Type**|fix subclass(GMCS), avg order, rescale| | subclassGMCS_rescale_avg.bin| 0.9864| 0.4951| TODO| 0.8355| 0.6379|
-|**Brain Cells**|disable| remove xxx dimensions|
+|**Cell Type**|fix subclass(GMCS), random order, rescale| | subclassGMCS_rescale_random.bin|0.9877|0.5160|TODO | 0.8478| 0.6415|
+|**Cell Type**|fix subclass(GMCS), avg order, rescale| | subclassGMCS_rescale_avg.bin| 0.9907| 0.5213| TODO| 0.8664| 0.7001|
+|**Brain Cells**|disable| remove unassigned dimensions| not suitable for metric eval|
