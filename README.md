@@ -113,14 +113,70 @@ input init: input dataset will be set null when restart
 | row_rescale_-695.bin                 | 0.5186     | 0.9635         | 0.2711     | 0.5361     | 0.7541       |
 
 
-tests for mushrooms: 1000 iters, perplexity 30, fix_iter 10
+500 iters, Iris, fix sepal_length, perplexity 30 (TODO: might cause trouble...), push every 20
+clipping mode is set to exact clip, overlap = 0
 
-fix cat 0 3 5 and last one
-3 random inits
-compare rescale, clip and random ordering
+| Filename                   | Continuity | Trustworthiness | OutContin | Steadiness | Cohesiveness |
+|---------------------------|------------|------------------|-----------|------------|---------------|
+| avg_clip_493.bin          | 0.6953     | 0.9797           | 0.4820    | 0.9264     | 0.7074        |
+| base_493.bin              | 0.7680     | 0.9897           | 0.5227    | 0.9229     | 0.7872        |
+| clip_0_sepal_493.bin      | 0.6920     | 0.9809           | 0.5127    | 0.9014     | 0.8025        |
+| disable_order_clip_493.bin| 0.7327     | 0.9841           | 0.7467    | 0.9364     | 0.7546        |
+| random_rescale_493.bin    | 0.7567     | 0.9870           | 0.5107    | 0.9331     | 0.7515        |
+| rescale_avg_493.bin       | 0.7607     | 0.9889           | 0.3787    | 0.9212     | 0.7721        |
 
-0: 2 cat, only random
-3/5/last: random 3 times + avg
+| Filename                   | Continuity | Trustworthiness | OutContin | Steadiness | Cohesiveness |
+|---------------------------|------------|------------------|-----------|------------|---------------|
+| avg_clip_702.bin          | 0.7027     | 0.9811           | 0.4913    | 0.9287     | 0.6932        |
+| base_702.bin              | 0.7680     | 0.9883           | 0.5220    | 0.9438     | 0.7513        |
+| clip_0_sepal_702.bin      | 0.6753     | 0.9788           | 0.5233    | 0.8874     | 0.7911        |
+| disable_order_clip_702.bin| 0.7500     | 0.9857           | 0.5107    | 0.9471     | 0.7695        |
+| random_rescale_702.bin    | 0.7567     | 0.9856           | 0.5007    | 0.9378     | 0.7875        |
+| rescale_avg_702.bin       | 0.7213     | 0.9808           | 0.3567    | 0.9289     | 0.7776        |
 
-results
-{'0_clip_random_0_42.bin': {'Continuity': np.float64(0.39203594288527827), 'Trustworthiness': np.float64(0.9973294037382646), 'OutContin': 0.01010585918266864, 'Steadiness': np.float64(0.8082302785117852), 'Cohesiveness': np.float64(0.7630676890112587)}, '0_rescale_random_0_42.bin': {'Continuity': np.float64(0.39495322501230923), 'Trustworthiness': np.float64(0.9973188547240897), 'OutContin': 0.015706548498276702, 'Steadiness': np.float64(0.8357889949706497), 'Cohesiveness': np.float64(0.7665380310007213)}, '22_clip_avg_42.bin': {'Continuity': np.float64(0.38420728705071394), 'Trustworthiness': np.float64(0.9970062826825506), 'OutContin': 0.036853766617429694, 'Steadiness': np.float64(0.7645377569837238), 'Cohesiveness': np.float64(0.7283825383467272)}, '22_clip_random_0_42.bin': {'Continuity': np.float64(0.3627646479566716), 'Trustworthiness': np.float64(0.9966190675230117), 'OutContin': 0.029049729197439363, 'Steadiness': np.float64(0.7519246129303632), 'Cohesiveness': np.float64(0.7175866076700224)}, '22_clip_random_1_42.bin': {'Continuity': np.float64(0.35199409158050227), 'Trustworthiness': np.float64(0.9964365190263137), 'OutContin': 0.019128508124076633, 'Steadiness': np.float64(0.761514676106721), 'Cohesiveness': np.float64(0.7166190786140018)}, '22_clip_random_2_42.bin': {'Continuity': np.float64(0.3697439684884294), 'Trustworthiness': np.float64(0.996770492708641), 'OutContin': 0.006782373215164954, 'Steadiness': np.float64(0.7577577818943589), 'Cohesiveness': np.float64(0.7154660341067114)}, '22_rescale_avg_42.bin': {'Continuity': np.float64(0.39442392909896606), 'Trustworthiness': np.float64(0.9973727929918477), 'OutContin': 0.046331856228459214, 'Steadiness': np.float64(0.7598891499577153), 'Cohesiveness': np.float64(0.7066960796159643)}, '22_rescale_random_0_42.bin': {'Continuity': np.float64(0.3921959625800099), 'Trustworthiness': np.float64(0.9972570164606823), 'OutContin': 0.03354258985721296, 'Steadiness': np.float64(0.770848741472506), 'Cohesiveness': np.float64(0.7213877721844402)}, '22_rescale_random_1_42.bin': {'Continuity': np.float64(0.39299606105366813), 'Trustworthiness': np.float64(0.9973518740948364), 'OutContin': 0.0485228951255543, 'Steadiness': np.float64(0.7743245878101905), 'Cohesiveness': np.float64(0.7268904185089322)}, '22_rescale_random_2_42.bin': {'Continuity': np.float64(0.3943500738552437), 'Trustworthiness': np.float64(0.9973820804963408), 'OutContin': 0.024593796159527153, 'Steadiness': np.float64(0.7792284177869618), 'Cohesiveness': np.float64(0.7326886834766673)}, '3_clip_avg_42.bin': {'Continuity': np.float64(0.387136878385032), 'Trustworthiness': np.float64(0.9971107557226314), 'OutContin': 0.06115214180206842, 'Steadiness': np.float64(0.7890816129897738), 'Cohesiveness': np.float64(0.7025269688977467)}, '3_clip_random_0_42.bin': {'Continuity': np.float64(0.37986213687838505), 'Trustworthiness': np.float64(0.9965879821634979), 'OutContin': 0.028508124076809246, 'Steadiness': np.float64(0.7580658354053167), 'Cohesiveness': np.float64(0.7044245487906986)}, '3_clip_random_1_42.bin': {'Continuity': np.float64(0.3698424421467258), 'Trustworthiness': np.float64(0.9963179978387044), 'OutContin': 0.04478089611029059, 'Steadiness': np.float64(0.7625515885075612), 'Cohesiveness': np.float64(0.7121240815557077)}, '3_clip_random_2_42.bin': {'Continuity': np.float64(0.37379369768586906), 'Trustworthiness': np.float64(0.9964426565517576), 'OutContin': 0.0259354997538157, 'Steadiness': np.float64(0.7442055575522901), 'Cohesiveness': np.float64(0.7209884104119029)}, '3_rescale_avg_42.bin': {'Continuity': np.float64(0.3928729689807977), 'Trustworthiness': np.float64(0.9969934186235323), 'OutContin': 0.0555145248645997, 'Steadiness': np.float64(0.7820820844418248), 'Cohesiveness': np.float64(0.7052564050085743)}, '3_rescale_random_0_42.bin': {'Continuity': np.float64(0.3961349089118661), 'Trustworthiness': np.float64(0.9970756748234274), 'OutContin': 0.048535204332841426, 'Steadiness': np.float64(0.7906231053073522), 'Cohesiveness': np.float64(0.7164122268780885)}, '3_rescale_random_1_42.bin': {'Continuity': np.float64(0.3918389955686854), 'Trustworthiness': np.float64(0.9970984867439925), 'OutContin': 0.048227474150664536, 'Steadiness': np.float64(0.79721057373932), 'Cohesiveness': np.float64(0.7084899982857298)}, '3_rescale_random_2_42.bin': {'Continuity': np.float64(0.3895371738060069), 'Trustworthiness': np.float64(0.9969378772820991), 'OutContin': 0.03652141802067948, 'Steadiness': np.float64(0.795049392163897), 'Cohesiveness': np.float64(0.7083919763175888)}, '5_clip_avg_42.bin': {'Continuity': np.float64(0.38474889217134417), 'Trustworthiness': np.float64(0.9970494867325463), 'OutContin': 0.035376661742983685, 'Steadiness': np.float64(0.771058818984353), 'Cohesiveness': np.float64(0.7320476744919142)}, '5_clip_random_0_42.bin': {'Continuity': np.float64(0.3826193993106844), 'Trustworthiness': np.float64(0.9970070675207041), 'OutContin': 0.01919005416051198, 'Steadiness': np.float64(0.7655855227134607), 'Cohesiveness': np.float64(0.7292903385329228)}, '5_clip_random_1_42.bin': {'Continuity': np.float64(0.37134416543574594), 'Trustworthiness': np.float64(0.99701926515042), 'OutContin': 0.006093057607090116, 'Steadiness': np.float64(0.7567566927230089), 'Cohesiveness': np.float64(0.73331012765503)}, '5_clip_random_2_42.bin': {'Continuity': np.float64(0.37255046774987693), 'Trustworthiness': np.float64(0.99683026185328), 'OutContin': 0.018439192516001866, 'Steadiness': np.float64(0.7581474918752411), 'Cohesiveness': np.float64(0.7405180304019883)}, '5_rescale_avg_42.bin': {'Continuity': np.float64(0.39417774495322505), 'Trustworthiness': np.float64(0.9973583592565224), 'OutContin': 0.027708025603150947, 'Steadiness': np.float64(0.7824489001515565), 'Cohesiveness': np.float64(0.745115250186552)}, '5_rescale_random_0_42.bin': {'Continuity': np.float64(0.39054652880354507), 'Trustworthiness': np.float64(0.9972323266971852), 'OutContin': 0.04207287050713961, 'Steadiness': np.float64(0.7704405064195772), 'Cohesiveness': np.float64(0.748528063907026)}, '5_rescale_random_1_42.bin': {'Continuity': np.float64(0.38980797636632203), 'Trustworthiness': np.float64(0.99732556455898), 'OutContin': 0.015731166912850748, 'Steadiness': np.float64(0.7684550479641041), 'Cohesiveness': np.float64(0.7293965131605005)}, '5_rescale_random_2_42.bin': {'Continuity': np.float64(0.39177744953225013), 'Trustworthiness': np.float64(0.9972677036185168), 'OutContin': 0.03477351058591819, 'Steadiness': np.float64(0.7891287466940393), 'Cohesiveness': np.float64(0.7483418641541261)}}
+| Filename                   | Continuity | Trustworthiness | OutContin | Steadiness | Cohesiveness |
+|---------------------------|------------|------------------|-----------|------------|---------------|
+| avg_clip_931.bin          | 0.7020     | 0.9813           | 0.4773    | 0.9179     | 0.6621        |
+| base_931.bin              | 0.7807     | 0.9889           | 0.5373    | 0.9477     | 0.7600        |
+| clip_0_sepal_931.bin      | 0.6907     | 0.9811           | 0.5200    | 0.8918     | 0.8091        |
+| disable_order_clip_931.bin| 0.7720     | 0.9875           | 0.5207    | 0.9557     | 0.7682        |
+| random_rescale_931.bin    | 0.7627     | 0.9877           | 0.5693    | 0.9529     | 0.7594        |
+| rescale_avg_931.bin       | 0.7527     | 0.9857           | 0.3587    | 0.9274     | 0.7489        |
+
+
+ESR, 1000 iters, perplexity 50, push every 20
+random fix multiple features
+class: only compare disable - clip/rescale, scale ranges with density
+clip: 1 overlap: full coverage
+fixed features: X
+2 17 63 87 100
+
+| Filename                  | Continuity | Trustworthiness | OutContin | Steadiness | Cohesiveness |
+|---------------------------|------------|------------------|-----------|------------|--------------|
+| clip_disable_-335.bin     | 0.1142     | 0.7308           | 0.0187    | 0.6063     | 0.4768       |
+| rescale_disable_-335.bin  | 0.1533     | 0.7572           | 0.0162    | 0.6131     | 0.4311       |
+| x100_-335.bin             | 0.0335     | 0.6651           | 0.0246    | 0.5889     | 0.7135       |
+| x17_-335.bin              | 0.0324     | 0.6642           | 0.0239    | 0.5930     | 0.7008       |
+| x2_-335.bin               | 0.0308     | 0.6592           | 0.0217    | 0.5895     | 0.7193       |
+| x63_-335.bin              | 0.0342     | 0.6678           | 0.0251    | 0.6070     | 0.7108       |
+| x87_-335.bin              | 0.0346     | 0.6667           | 0.0245    | 0.6016     | 0.7149       |
+| clip_disable_-846.bin     | 0.1182     | 0.7357           | 0.0189    | 0.6158     | 0.4588       |
+| rescale_disable_-846.bin  | 0.1534     | 0.7604           | 0.0151    | 0.6128     | 0.4444       |
+| x100_-846.bin             | 0.0331     | 0.6617           | 0.0233    | 0.5809     | 0.7024       |
+| x17_-846.bin              | 0.0329     | 0.6662           | 0.0248    | 0.6042     | 0.6921       |
+| x2_-846.bin               | 0.0308     | 0.6596           | 0.0222    | 0.5836     | 0.7354       |
+| x63_-846.bin              | 0.0329     | 0.6640           | 0.0246    | 0.5821     | 0.7009       |
+| x87_-846.bin              | 0.0342     | 0.6659           | 0.0242    | 0.5929     | 0.7132       |
+| clip_disable_883.bin      | 0.1175     | 0.7358           | 0.0191    | 0.6093     | 0.4840       |
+| rescale_disable_883.bin   | 0.1540     | 0.7610           | 0.0166    | 0.6155     | 0.4355       |
+| x100_883.bin              | 0.0334     | 0.6645           | 0.0251    | 0.5912     | 0.7420       |
+| x17_883.bin               | 0.0323     | 0.6633           | 0.0251    | 0.5989     | 0.6964       |
+| x2_883.bin                | 0.0307     | 0.6603           | 0.0224    | 0.5901     | 0.7287       |
+| x63_883.bin               | 0.0341     | 0.6679           | 0.0252    | 0.5883     | 0.7227       |
+| x87_883.bin               | 0.0344     | 0.6660           | 0.0252    | 0.5944     | 0.7096       |
+
+| Filename        | Continuity | Trustworthiness | OutContin | Steadiness | Cohesiveness |
+|----------------|------------|------------------|-----------|------------|--------------|
+| base_-335.bin  | 0.1995     | 0.8085           | 0.1230    | 0.6779     | 0.6501       |
+| base_-846.bin  | 0.1981     | 0.8076           | 0.1204    | 0.6812     | 0.6114       |
+| base_883.bin   | 0.1983     | 0.8072           | 0.1199    | 0.6687     | 0.6572       |
