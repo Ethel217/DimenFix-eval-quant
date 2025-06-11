@@ -1,0 +1,247 @@
+{
+    "base_1.bin": {
+        "Continuity": 0.433,
+        "Trustworthiness": 0.9841,
+        "OutContin": 0.1358,
+        "Steadiness": 0.8135,
+        "Cohesiveness": 0.8837
+    },
+    "base_2.bin": {
+        "Continuity": 0.4333,
+        "Trustworthiness": 0.9849,
+        "OutContin": 0.1309,
+        "Steadiness": 0.807,
+        "Cohesiveness": 0.8731
+    },
+    "base_3.bin": {
+        "Continuity": 0.4309,
+        "Trustworthiness": 0.985,
+        "OutContin": 0.1296,
+        "Steadiness": 0.809,
+        "Cohesiveness": 0.8706
+    },
+    "base_4.bin": {
+        "Continuity": 0.4345,
+        "Trustworthiness": 0.9848,
+        "OutContin": 0.1307,
+        "Steadiness": 0.8098,
+        "Cohesiveness": 0.8859
+    },
+    "base_5.bin": {
+        "Continuity": 0.4323,
+        "Trustworthiness": 0.9846,
+        "OutContin": 0.1353,
+        "Steadiness": 0.8089,
+        "Cohesiveness": 0.8824
+    },
+    "clip_dis_1.bin": {
+        "Continuity": 0.2969,
+        "Trustworthiness": 0.9498,
+        "OutContin": 0.0287,
+        "Steadiness": 0.7499,
+        "Cohesiveness": 0.7862
+    },
+    "clip_dis_2.bin": {
+        "Continuity": 0.3006,
+        "Trustworthiness": 0.95,
+        "OutContin": 0.0255,
+        "Steadiness": 0.7481,
+        "Cohesiveness": 0.7884
+    },
+    "clip_dis_3.bin": {
+        "Continuity": 0.2995,
+        "Trustworthiness": 0.9491,
+        "OutContin": 0.029,
+        "Steadiness": 0.7538,
+        "Cohesiveness": 0.7811
+    },
+    "clip_dis_4.bin": {
+        "Continuity": 0.293,
+        "Trustworthiness": 0.9516,
+        "OutContin": 0.0385,
+        "Steadiness": 0.732,
+        "Cohesiveness": 0.7777
+    },
+    "clip_dis_5.bin": {
+        "Continuity": 0.2981,
+        "Trustworthiness": 0.9499,
+        "OutContin": 0.0243,
+        "Steadiness": 0.7411,
+        "Cohesiveness": 0.7955
+    },
+    "res_avg_1.bin": {
+        "Continuity": 0.3768,
+        "Trustworthiness": 0.9703,
+        "OutContin": 0.0379,
+        "Steadiness": 0.783,
+        "Cohesiveness": 0.8042
+    },
+    "res_avg_2.bin": {
+        "Continuity": 0.3899,
+        "Trustworthiness": 0.9736,
+        "OutContin": 0.0847,
+        "Steadiness": 0.7789,
+        "Cohesiveness": 0.8506
+    },
+    "res_avg_3.bin": {
+        "Continuity": 0.3903,
+        "Trustworthiness": 0.9707,
+        "OutContin": 0.0565,
+        "Steadiness": 0.7819,
+        "Cohesiveness": 0.8691
+    },
+    "res_avg_4.bin": {
+        "Continuity": 0.3839,
+        "Trustworthiness": 0.9716,
+        "OutContin": 0.09,
+        "Steadiness": 0.7721,
+        "Cohesiveness": 0.8463
+    },
+    "res_avg_5.bin": {
+        "Continuity": 0.3891,
+        "Trustworthiness": 0.9718,
+        "OutContin": 0.0642,
+        "Steadiness": 0.7776,
+        "Cohesiveness": 0.8465
+    },
+    "res_dis_1.bin": {
+        "Continuity": 0.4074,
+        "Trustworthiness": 0.9707,
+        "OutContin": 0.0278,
+        "Steadiness": 0.7814,
+        "Cohesiveness": 0.7901
+    },
+    "res_dis_2.bin": {
+        "Continuity": 0.4067,
+        "Trustworthiness": 0.9734,
+        "OutContin": 0.032,
+        "Steadiness": 0.78,
+        "Cohesiveness": 0.7803
+    },
+    "res_dis_3.bin": {
+        "Continuity": 0.4066,
+        "Trustworthiness": 0.9712,
+        "OutContin": 0.029,
+        "Steadiness": 0.7843,
+        "Cohesiveness": 0.7847
+    },
+    "res_dis_4.bin": {
+        "Continuity": 0.4081,
+        "Trustworthiness": 0.9727,
+        "OutContin": 0.0313,
+        "Steadiness": 0.7857,
+        "Cohesiveness": 0.8028
+    },
+    "res_dis_5.bin": {
+        "Continuity": 0.4087,
+        "Trustworthiness": 0.9733,
+        "OutContin": 0.0299,
+        "Steadiness": 0.773,
+        "Cohesiveness": 0.7729
+    },
+    "res_ran_1_1.bin": {
+        "Continuity": 0.4097,
+        "Trustworthiness": 0.9708,
+        "OutContin": 0.0271,
+        "Steadiness": 0.7684,
+        "Cohesiveness": 0.7938
+    },
+    "res_ran_1_2.bin": {
+        "Continuity": 0.4084,
+        "Trustworthiness": 0.9716,
+        "OutContin": 0.0284,
+        "Steadiness": 0.7911,
+        "Cohesiveness": 0.771
+    },
+    "res_ran_1_3.bin": {
+        "Continuity": 0.4081,
+        "Trustworthiness": 0.971,
+        "OutContin": 0.0259,
+        "Steadiness": 0.7853,
+        "Cohesiveness": 0.7828
+    },
+    "res_ran_2_1.bin": {
+        "Continuity": 0.408,
+        "Trustworthiness": 0.9738,
+        "OutContin": 0.029,
+        "Steadiness": 0.7792,
+        "Cohesiveness": 0.777
+    },
+    "res_ran_2_2.bin": {
+        "Continuity": 0.4076,
+        "Trustworthiness": 0.974,
+        "OutContin": 0.0304,
+        "Steadiness": 0.7777,
+        "Cohesiveness": 0.7858
+    },
+    "res_ran_2_3.bin": {
+        "Continuity": 0.4076,
+        "Trustworthiness": 0.974,
+        "OutContin": 0.0316,
+        "Steadiness": 0.7699,
+        "Cohesiveness": 0.794
+    },
+    "res_ran_3_1.bin": {
+        "Continuity": 0.4079,
+        "Trustworthiness": 0.9728,
+        "OutContin": 0.0274,
+        "Steadiness": 0.7785,
+        "Cohesiveness": 0.8061
+    },
+    "res_ran_3_2.bin": {
+        "Continuity": 0.4086,
+        "Trustworthiness": 0.9718,
+        "OutContin": 0.03,
+        "Steadiness": 0.7758,
+        "Cohesiveness": 0.7845
+    },
+    "res_ran_3_3.bin": {
+        "Continuity": 0.4073,
+        "Trustworthiness": 0.9726,
+        "OutContin": 0.0289,
+        "Steadiness": 0.7729,
+        "Cohesiveness": 0.7817
+    },
+    "res_ran_4_1.bin": {
+        "Continuity": 0.4041,
+        "Trustworthiness": 0.9725,
+        "OutContin": 0.0317,
+        "Steadiness": 0.7799,
+        "Cohesiveness": 0.7859
+    },
+    "res_ran_4_2.bin": {
+        "Continuity": 0.4093,
+        "Trustworthiness": 0.973,
+        "OutContin": 0.0317,
+        "Steadiness": 0.7847,
+        "Cohesiveness": 0.8006
+    },
+    "res_ran_4_3.bin": {
+        "Continuity": 0.4075,
+        "Trustworthiness": 0.9729,
+        "OutContin": 0.0315,
+        "Steadiness": 0.7795,
+        "Cohesiveness": 0.7973
+    },
+    "res_ran_5_1.bin": {
+        "Continuity": 0.411,
+        "Trustworthiness": 0.9741,
+        "OutContin": 0.0284,
+        "Steadiness": 0.774,
+        "Cohesiveness": 0.7889
+    },
+    "res_ran_5_2.bin": {
+        "Continuity": 0.4082,
+        "Trustworthiness": 0.9741,
+        "OutContin": 0.0294,
+        "Steadiness": 0.7786,
+        "Cohesiveness": 0.768
+    },
+    "res_ran_5_3.bin": {
+        "Continuity": 0.4089,
+        "Trustworthiness": 0.9736,
+        "OutContin": 0.0278,
+        "Steadiness": 0.7719,
+        "Cohesiveness": 0.7754
+    }
+}
