@@ -1,0 +1,23 @@
+{
+  "base_-335.bin": {
+    "Continuity": 0.19953043478260873,
+    "Trustworthiness": 0.808468116005126,
+    "OutContin": 0.12304347826086917,
+    "Steadiness": 0.6779216374296593,
+    "Cohesiveness": 0.6500934238124945
+  },
+  "base_-846.bin": {
+    "Continuity": 0.19808695652173913,
+    "Trustworthiness": 0.8076474363366882,
+    "OutContin": 0.12043478260869528,
+    "Steadiness": 0.6811969432666205,
+    "Cohesiveness": 0.6113906092054338
+  },
+  "base_883.bin": {
+    "Continuity": 0.1983304347826087,
+    "Trustworthiness": 0.8071998690105946,
+    "OutContin": 0.11986086956521683,
+    "Steadiness": 0.6687128568987482,
+    "Cohesiveness": 0.6572486344730428
+  }
+}
